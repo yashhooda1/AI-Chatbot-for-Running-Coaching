@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - running_advice
+  - ask_workout
+  - provide_goal
+  - provide_distance
+  - provide_pace
+
+
+actions:
+  - action_recommend_workout
+
+entities:
+  - goal
+  - distance
+  - pace 
+
+slots:
+  goal:
+    type: text
+  distance:
+    type: text
+  pace:
+    type: text
+
+
+responses:
+  utter_greet:
+    - text: "Hi! I'm your running coach chatbot. How can I assist you with your training today?"
+
+  utter_goodbye:
+    - text: "Happy running! See you next time."
+
+  utter_ask_goal:
+    - text: "What is your running goal? 5k, marathon, or general fitness?"
+
+  utter_ask_distance:
+    - text: "How far do you plan to run?"
+
+  utter_ask_pace:
+    - text: "What's your target pace?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

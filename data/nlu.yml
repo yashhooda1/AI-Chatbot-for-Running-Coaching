@@ -107,10 +107,24 @@ nlu:
     - I can run 3 miles.
     - My weekly mileage is 25 miles.
     - I usually run 10 miles on weekends.
+    - My weekly mileage is 30 miles.
+    - My weekly mileage is 40 miles.
+    - My weekly mileage is 50 miles.
+    - My weekly mileage is 60 miles.
+    - My weekly mileage is 70 miles.
+    - My weekly mileage is 80 miles.
 
 - intent: provide_pace
   examples: |
     - My pace is 7:30 per mile.
     - I run at an 8-minute pace.
+    - My mile time is 4:20.
+
+- intent: ask_trainingplan
+  examples: |
+    - Training plan for sub 5 mile?
+    - Training for sub 20 minute 5k?
+    - Training for sub 15 minute 5k?
+    - Training for sub 1:30 half marathon?
 
     
